@@ -1,0 +1,60 @@
+body {
+  width: 100%;
+  margin: 0;
+  height: 100%;
+}
+
+.top {
+  background-color: rgb(17, 17, 97);
+  padding: 2px 0;
+  text-align: center;
+}
+
+.top p {
+  color: #ffff;
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+.body h2 {
+  text-align: left;
+  font-size: 30px;
+  margin-left: 22%;
+  margin-bottom: 2px;
+}
+
+.to-do-section{
+  display: flex;
+  flex-direction: column-reverse;
+
+}
+
+.list {
+  max-width: 70%;
+  margin-left: 22%;
+}
+
+.input-field {
+  text-align: left;
+  margin-bottom: 3px;
+  padding: 12px;
+  width: 63%;
+  border-color: gray;
+}
+
+button {
+  background-color: rgb(17, 17, 97);
+  color: #ffff;
+  padding: 12px 35px;
+  border: none;
+  margin-top: 10px;
+  margin-left: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: rgb(17, 17, 97);
+  border: 3px solid rgb(17, 17, 97);
+}
