@@ -1,12 +1,12 @@
 let inp = document.querySelector(".input-field");
-let list = document.querySelector(".to-do");
+let list = document.querySelector(".todo");
 let addTask = document.querySelector(".btn");
 let taskClear = document.querySelector(".btnClear");
 let todo = [];
 
 function render(elemments) {
   list.innerHTML = "";
-  elemments.forEach(e => {
+  elemments.forEach((e) => {
     let newEl = document.createElement("li");
     newEl.innerHTML = e;
     newEl.classList.add("list-group-item");
@@ -14,7 +14,7 @@ function render(elemments) {
   });
 }
 
-addTask.addEventListener("click", e => {
+addTask.addEventListener("click", (e) => {
   if (inp.value !== "") {
     todo.push(inp.value);
     inp.value = "";
@@ -34,7 +34,7 @@ if (saved) {
   taskClear.style.display = "none";
 }
 
-taskClear.addEventListener("click", function() {
+taskClear.addEventListener("click", function () {
   localStorage.clear();
   list.innerHTML = "";
   todo = [];
